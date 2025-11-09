@@ -1,40 +1,10 @@
 export default function ProjectsPage() {
     const projects = [
       {
-        name: 'Vitest',
-        description: 'A blazing fast unit test framework powered by Vite',
-        link: 'https://github.com/vitest-dev/vitest',
-        logo: 'https://ext.same-assets.com/728248024/2926129230.png',
-      },
-      {
-        name: 'Slidev',
-        description: 'Presentation slides for developers',
-        link: 'https://github.com/slidevjs/slidev',
-        logo: 'https://ext.same-assets.com/728248024/1115452572.png',
-      },
-      {
-        name: 'VueUse',
-        description: 'Collection of essential Vue Composition Utilities',
-        link: 'https://github.com/vueuse/vueuse',
-        logo: 'https://ext.same-assets.com/728248024/406676907.png',
-      },
-      {
-        name: 'UnoCSS',
-        description: 'Instant on-demand atomic CSS engine',
-        link: 'https://github.com/unocss/unocss',
-        logo: 'https://ext.same-assets.com/728248024/3658792515.png',
-      },
-      {
-        name: 'Elk',
-        description: 'A nimble Mastodon web client',
-        link: 'https://github.com/elk-zone/elk',
-        logo: 'https://ext.same-assets.com/728248024/3594348660.png',
-      },
-      {
-        name: 'Type Challenges',
-        description: 'Collection of TypeScript type challenges',
-        link: 'https://github.com/type-challenges/type-challenges',
-        logo: 'https://ext.same-assets.com/728248024/2017814209.png',
+        name: 'Lucentia: Automated (Startup)',
+        description: 'Automated Analysis of Transactions to Budget, Connect, and Identify Fraudulent Activity',
+        link: 'https://github.com/gvu07/Lucentia',
+        logo: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
       },
     ];
   
