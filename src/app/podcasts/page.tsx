@@ -1,32 +1,11 @@
 export default function PodcastsPage() {
     const episodes = [
       {
-        number: 12,
-        title: 'Building Open Source Communities',
-        date: '2024-01-20',
-        duration: '45:32',
-        description: 'Discussing how to build and maintain healthy open source communities',
-      },
-      {
-        number: 11,
-        title: 'The Future of Web Development',
-        date: '2024-01-06',
-        duration: '52:18',
-        description: 'Exploring emerging trends and technologies in web development',
-      },
-      {
-        number: 10,
-        title: 'TypeScript Deep Dive',
-        date: '2023-12-23',
-        duration: '48:45',
-        description: 'Advanced TypeScript patterns and type system tricks',
-      },
-      {
-        number: 9,
-        title: 'Developer Productivity',
-        date: '2023-12-09',
-        duration: '41:20',
-        description: 'Tips and tools for becoming a more productive developer',
+        number: 1,
+        title: 'Placeholder Episode',
+        date: 'Placeholder Date',
+        duration: 'Placeholder Duration',
+        description: 'Placeholder Description',
       },
     ];
   
