@@ -1,28 +1,10 @@
 export default function TalksPage() {
     const talks = [
       {
-        title: 'The Art of Building Open Source Projects',
-        event: 'VueConf 2023',
-        date: '2023',
-        description: 'Sharing insights on building and maintaining successful open source projects',
-      },
-      {
-        title: 'Reimagine Atomic CSS',
-        event: 'ViteConf 2022',
-        date: '2022',
-        description: 'Introduction to UnoCSS and the future of atomic CSS',
-      },
-      {
-        title: 'Composable Vue',
-        event: 'Vue Amsterdam 2022',
-        date: '2022',
-        description: 'Deep dive into Vue Composition API and VueUse',
-      },
-      {
-        title: 'Vite: The Next Generation of Build Tools',
-        event: 'Frontend Conference',
-        date: '2021',
-        description: 'Understanding how Vite is revolutionizing the frontend build process',
+        title: 'Placeholder Talk',
+        event: 'Placeholder Event',
+        date: 'Placeholder Date',
+        description: 'Placeholder Description',
       },
     ];
   
