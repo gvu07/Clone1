@@ -1,11 +1,6 @@
 export default function PhotosPage() {
     const photos = [
-      'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800',
-      'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800',
-      'https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=800',
-      'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800',
-      'https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=800',
-      'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800',
+      'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fgi.d.vu%2F&psig=AOvVaw204LK-8uVqtOH-NQ9HFT7_&ust=1762808385223000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPC6ypX75ZADFQAAAAAdAAAAABAV',
     ];
   
     return (
