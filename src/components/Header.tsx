@@ -5,7 +5,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 px-5 py-5 backdrop-blur-sm bg-black/20 dark:bg-black/20 light:bg-white/80">
+    <header className="fixed top-0 left-0 right-0 z-40 px-5 py-5 backdrop-blur-sm bg-black/20">
       <div className="flex items-center justify-between max-w-screen-xl mx-auto">
         {/* Logo */}
         <Link href="/" className="w-12 h-12 block select-none outline-none">

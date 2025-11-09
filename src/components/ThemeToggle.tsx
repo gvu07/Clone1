@@ -8,7 +8,10 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem('theme');
+    
+    // Check saved theme or system preference
+    const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
+    
     if (savedTheme === 'light') {
       setIsDark(false);
       document.documentElement.classList.remove('dark');
@@ -27,17 +30,22 @@ export function ThemeToggle() {
     if (newTheme) {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
-      localStorage.setItem('theme', 'dark');
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('theme', 'dark');
+      }
     } else {
       document.documentElement.classList.remove('dark');
       document.documentElement.classList.add('light');
-      localStorage.setItem('theme', 'light');
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('theme', 'light');
+      }
     }
   };
 
+  // Prevent hydration mismatch by not rendering until mounted
   if (!mounted) {
     return (
-      <button className="w-5 h-5 select-none" aria-label="Toggle theme">
+      <button className="w-5 h-5 select-none opacity-0" aria-label="Toggle theme">
         <div className="w-5 h-5" />
       </button>
     );

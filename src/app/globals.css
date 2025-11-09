@@ -136,4 +136,10 @@
   a:hover img {
     transform: scale(1.05);
   }
+
+  /* Fix for header backdrop blur */
+  header {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
 }

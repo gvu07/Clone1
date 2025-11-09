@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anthony Fu</title>
+    <link>https://antfu.me</link>
+    <description>Anthony Fu's Blog - Open source, programming, and life</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://antfu.me/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Hello Tokyo</title>
+      <link>https://antfu.me/posts/hello-tokyo</link>
+      <description>My journey moving to Tokyo and starting a new chapter</description>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+      <guid>https://antfu.me/posts/hello-tokyo</guid>
+    </item>
+    
+    <item>
+      <title>Sponsorship Forwarding</title>
+      <link>https://antfu.me/posts/sponsorship-forwarding</link>
+      <description>How sponsorship forwarding works and why I do it</description>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
+      <guid>https://antfu.me/posts/sponsorship-forwarding</guid>
+    </item>
+    
+    <item>
+      <title>The Art of Building Open Source</title>
+      <link>https://antfu.me/posts/art-of-building-open-source</link>
+      <description>Lessons learned from maintaining popular open source projects</description>
+      <pubDate>Sun, 05 Nov 2023 00:00:00 GMT</pubDate>
+      <guid>https://antfu.me/posts/art-of-building-open-source</guid>
+    </item>
+  </channel>
+</rss>
