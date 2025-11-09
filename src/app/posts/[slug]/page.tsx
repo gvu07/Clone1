@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 // Generate static params for all known posts
 export async function generateStaticParams() {
   const posts = [
@@ -48,9 +50,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
       <main className="min-h-screen px-7 py-10 pt-32 overflow-x-hidden">
         <div className="prose mx-auto">
           <div className="mb-8 animate-fade-in" style={{ animationDelay: '0ms' }}>
-            <a href="/posts" className="text-sm text-gray-400 hover:text-white transition-colors mb-4 inline-block">
+            <Link href="/posts" className="text-sm text-gray-400 hover:text-white transition-colors mb-4 inline-block">
               ← Back to all posts
-            </a>
+            </Link>
             <h1 className="mb-2">{post.title}</h1>
             <div className="text-sm text-gray-500">
               <time dateTime={post.date}>{post.date}</time>
@@ -75,9 +77,9 @@ export default function PostDetailPage({ params }: { params: { slug: string } })
           </article>
   
           <div className="mt-12 pt-8 border-t border-gray-800 animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <a href="/posts" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="/posts" className="text-gray-400 hover:text-white transition-colors">
               ← Back to all posts
-            </a>
+            </Link>
           </div>
         </div>
       </main>

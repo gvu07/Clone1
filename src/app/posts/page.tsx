@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PostsPage() {
     const posts = [
       {
@@ -55,7 +57,7 @@ export default function PostsPage() {
                 className="group border-b border-gray-800 pb-6 animate-fade-in"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <a href={`/posts/${post.slug}`} className="block">
+                <Link href={`/posts/${post.slug}`} className="block">
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3 text-sm text-gray-500">
                       <time dateTime={post.date}>{post.date}</time>
@@ -67,7 +69,7 @@ export default function PostsPage() {
                       {post.description}
                     </p>
                   </div>
-                </a>
+                </Link>
               </article>
             ))}
           </div>

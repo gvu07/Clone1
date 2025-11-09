@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
     return (
       <main className="min-h-screen px-7 py-10 pt-32 overflow-x-hidden">
@@ -85,11 +87,11 @@ export default function Home() {
             <p>
               Dreaming up cool ideas and making them come true is where my passion lies. I am
               enthusiastic about building tools that help myself and others to be more productive
-              and enjoy the process of crafting. You can find my <a href="/projects">full projects list here</a>.
+              and enjoy the process of crafting. You can find my <Link href="/projects">full projects list here</Link>.
             </p>
   
             <p>
-              I give <a href="/talks">talks</a> and write <a href="/posts">blog posts</a> about open source, coding, etc.
+              I give <Link href="/talks">talks</Link> and write <Link href="/posts">blog posts</Link> about open source, coding, etc.
               Occasionally, I do live coding streams on <a href="https://www.youtube.com/anthonyfu7" target="_blank" rel="noopener">YouTube</a> and{' '}
               <a href="https://space.bilibili.com/668380" target="_blank" rel="noopener">哔哩哔哩</a>.
               I am also co-hosting a podcast <a href="https://bento.me/nocodingtoday" target="_blank" rel="noopener"><em>No Coding Today</em></a>{' '}
@@ -100,13 +102,13 @@ export default function Home() {
   
             <p>
               Outside of programming, I enjoy doing photography and traveling. I post{' '}
-              <a href="/photos">photos on this page</a>. I also love anime, movies and dramas, I am trying to list my{' '}
-              <a href="/media">media consumption</a>. Also, in case you are interested, here are the{' '}
-              <a href="/use">hardware/software I use</a>.
+              <Link href="/photos">photos on this page</Link>. I also love anime, movies and dramas, I am trying to list my{' '}
+              <Link href="/media">media consumption</Link>. Also, in case you are interested, here are the{' '}
+              <Link href="/use">hardware/software I use</Link>.
             </p>
   
             <p>
-              I recently <a href="/posts/hello-tokyo">moved to <ruby lang="ja">東京<rp>(</rp><rt>Tokyo</rt><rp>)</rp></ruby></a>,
+              I recently <Link href="/posts/hello-tokyo">moved to <ruby lang="ja">東京<rp>(</rp><rt>Tokyo</rt><rp>)</rp></ruby></Link>,
               if you are around, please reach out and let's have some coffee or work together.
             </p>
   
@@ -158,9 +160,9 @@ export default function Home() {
                 Sponsor the Ecosystem
               </a>
               <span className="text-sm opacity-50">
-                <a href="/posts/sponsorship-forwarding" target="_blank" className="hover:underline">
+                <Link href="/posts/sponsorship-forwarding" className="hover:underline">
                   How does this work?
-                </a>
+                </Link>
               </span>
             </p>
   
