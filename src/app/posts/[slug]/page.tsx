@@ -1,4 +1,7 @@
 import Link from 'next/link';
+type PostDetailPageProps = {
+  params: Promise<{ slug: string }>;
+};
 
 // Generate static params for all known posts
 export async function generateStaticParams() {
@@ -16,15 +19,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function PostDetailPage({ params }: { params: { slug: string } }) {
+export default async function PostDetailPage({ params }: PostDetailPageProps) {
+    const { slug } = await params;
     // This is a placeholder - in a real app you'd fetch the post data
     const post = {
-      title: params.slug.split('-').map(word => 
+      title: slug.split('-').map(word => 
         word.charAt(0).toUpperCase() + word.slice(1)
       ).join(' '),
       date: '2024-01-15',
       content: `
-  # ${params.slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+  # ${slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
   
   This is a sample blog post. In a real application, you would fetch the actual content from a CMS, markdown files, or a database.
   
