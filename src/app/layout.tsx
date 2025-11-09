@@ -6,8 +6,8 @@ import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Anthony Fu",
-  description: "Anthony Fu's Portfolio",
+  title: "Giang Anh Vu",
+  description: "Giang Anh Vu's Personal Website",
 };
 
 export default function RootLayout({
