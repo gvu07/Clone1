@@ -1,40 +1,10 @@
 export default function DemosPage() {
     const demos = [
       {
-        title: 'Generative Art #42',
-        description: 'Interactive particle system with physics simulation',
-        image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400',
-        url: 'https://100.antfu.me/042',
-      },
-      {
-        title: 'Generative Art #35',
-        description: 'Recursive fractal patterns with color gradients',
-        image: 'https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=400',
-        url: 'https://100.antfu.me/035',
-      },
-      {
-        title: 'Generative Art #28',
-        description: 'Wave interference patterns in WebGL',
-        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400',
-        url: 'https://100.antfu.me/028',
-      },
-      {
-        title: 'Generative Art #21',
-        description: 'Perlin noise terrain generation',
-        image: 'https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=400',
-        url: 'https://100.antfu.me/021',
-      },
-      {
-        title: 'Generative Art #14',
-        description: 'Animated cellular automata',
-        image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400',
-        url: 'https://100.antfu.me/014',
-      },
-      {
-        title: 'Generative Art #07',
-        description: 'Sine wave synthesis and visualization',
-        image: 'https://images.unsplash.com/photo-1617791160588-241658c0f566?w=400',
-        url: 'https://100.antfu.me/007',
+        title: 'Photos',
+        description: 'Photography from my travels around the world',
+        image: 'https://www.instagram.com/p/DHPvx1JuYs_/?img_index=1',
+        url: '/photos',
       },
     ];
   
