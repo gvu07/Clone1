@@ -1,18 +1,14 @@
 export default function SponsorsPage() {
     const sponsors = {
-      platinum: [
-        { name: 'NuxtLabs', logo: 'https://ext.same-assets.com/728248024/2457380849.png', url: 'https://nuxtlabs.com' },
-        { name: 'Vercel', logo: 'https://ext.same-assets.com/728248024/867116428.png', url: 'https://vercel.com' },
-      ],
-      gold: [
-        { name: 'Stackblitz', logo: 'https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=100', url: '#' },
-        { name: 'VueSchool', logo: 'https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=100', url: '#' },
-      ],
-      silver: [
-        { name: 'Company A', logo: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=100', url: '#' },
-        { name: 'Company B', logo: 'https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=100', url: '#' },
-        { name: 'Company C', logo: 'https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=100', url: '#' },
-      ],
+        Work: [
+            { name: 'MagLab', logo: 'https://space.engin.umich.edu/wp-content/uploads/sites/567/2022/06/LabLogo-2021-11-08-02.jpg', url: 'https://space.engin.umich.edu/' },
+        ],
+        Sponsorships: [
+            { name: 'Aelfriceden', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabHDNyHOMI51qMv0ZqeWDWV3H3yIciNuTOw&s', url: 'https://www.aelfriceden.com/' },
+        ],
+        Scholarships: [
+            { name: 'MCPS Foundation Scholarship', logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQE0UbfypNDTEw/company-logo_200_200/company-logo_200_200/0/1631340310617?e=2147483647&v=beta&t=8MR89xsGTTAyGjdnJUaDl28MN0wZ8zcLz0Wsb-fJl-0', url: 'https://www.mcpsfoundation.org/refresh/campaigns/patricia-oneill' },
+        ],
     };
   
     return (
@@ -25,11 +21,11 @@ export default function SponsorsPage() {
         </div>
   
         <div className="max-w-4xl mx-auto space-y-12">
-          {/* Platinum Sponsors */}
+          {/* Work Sponsors */}
           <section className="animate-fade-in" style={{ animationDelay: '0ms' }}>
-            <h2 className="text-2xl font-semibold text-white mb-6">Platinum Sponsors</h2>
+            <h2 className="text-2xl font-semibold text-white mb-6">Work Sponsors</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {sponsors.platinum.map((sponsor, index) => (
+              {sponsors.Work.map((sponsor, index) => (
                 <a
                   key={sponsor.name}
                   href={sponsor.url}
@@ -47,11 +43,11 @@ export default function SponsorsPage() {
             </div>
           </section>
   
-          {/* Gold Sponsors */}
+          {/* Sponsorships Sponsors */}
           <section className="animate-fade-in" style={{ animationDelay: '100ms' }}>
-            <h2 className="text-xl font-semibold text-white mb-6">Gold Sponsors</h2>
+            <h2 className="text-xl font-semibold text-white mb-6">Sponsorships Sponsors</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {sponsors.gold.map((sponsor, index) => (
+              {sponsors.Sponsorships.map((sponsor, index) => (
                 <a
                   key={sponsor.name}
                   href={sponsor.url}
@@ -69,11 +65,11 @@ export default function SponsorsPage() {
             </div>
           </section>
   
-          {/* Silver Sponsors */}
+          {/* Scholarships Sponsors */}
           <section className="animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <h2 className="text-lg font-semibold text-white mb-6">Silver Sponsors</h2>
+            <h2 className="text-lg font-semibold text-white mb-6">Scholarships Sponsors</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-              {sponsors.silver.map((sponsor, index) => (
+              {sponsors.Scholarships.map((sponsor, index) => (
                 <a
                   key={sponsor.name}
                   href={sponsor.url}
