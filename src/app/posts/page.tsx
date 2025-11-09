@@ -3,40 +3,10 @@ import Link from 'next/link';
 export default function PostsPage() {
     const posts = [
       {
-        title: 'Hello Tokyo',
-        date: '2024-01-15',
-        description: 'My journey moving to Tokyo and starting a new chapter',
-        slug: 'hello-tokyo',
-      },
-      {
-        title: 'Sponsorship Forwarding',
-        date: '2023-12-10',
-        description: 'How sponsorship forwarding works and why I do it',
-        slug: 'sponsorship-forwarding',
-      },
-      {
-        title: 'The Art of Building Open Source',
-        date: '2023-11-05',
-        description: 'Lessons learned from maintaining popular open source projects',
-        slug: 'art-of-building-open-source',
-      },
-      {
-        title: 'Why Vitest',
-        date: '2023-10-20',
-        description: 'The story behind creating Vitest and why we needed it',
-        slug: 'why-vitest',
-      },
-      {
-        title: 'My Development Workflow',
-        date: '2023-09-15',
-        description: 'Tools and practices that help me stay productive',
-        slug: 'development-workflow',
-      },
-      {
-        title: 'Type Challenges Journey',
-        date: '2023-08-30',
-        description: 'Creating Type Challenges and its impact on the TypeScript community',
-        slug: 'type-challenges-journey',
+        title: 'Placeholder Post',
+        date: 'Placeholder Date',
+        description: 'Placeholder Description',
+        slug: 'placeholder-post',
       },
     ];
   
