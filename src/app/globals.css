@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('https://ext.same-assets.com/728248024/2481226978.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://ext.same-assets.com/728248024/3776456017.woff2') format('woff2');
+  }
+
+  * {
+    @apply border-gray-800;
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-gray-200;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.light body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-2xl text-gray-200;
+  }
+
+  html.light .prose {
+    @apply text-gray-900;
+  }
+
+  .prose h1 {
+    @apply text-4xl md:text-5xl font-normal mb-8 text-white leading-tight;
+  }
+
+  html.light .prose h1 {
+    @apply text-gray-900;
+  }
+
+  .prose p {
+    @apply mb-4 leading-relaxed text-gray-300;
+  }
+
+  html.light .prose p {
+    @apply text-gray-700;
+  }
+
+  .prose a {
+    @apply text-gray-200 hover:text-white transition-colors no-underline;
+  }
+
+  html.light .prose a {
+    @apply text-gray-900 hover:text-black;
+  }
+
+  .prose hr {
+    @apply border-gray-800 my-8;
+  }
+
+  html.light .prose hr {
+    @apply border-gray-200;
+  }
+
+  .font-mono {
+    font-family: 'DM Mono', monospace;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Enhanced hover effects */
+  a {
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    transform: translateY(-1px);
+  }
+
+  /* Button hover effects */
+  button {
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  button:active {
+    transform: translateY(0);
+  }
+
+  /* Image hover effects */
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  a:hover img {
+    transform: scale(1.05);
+  }
+}
