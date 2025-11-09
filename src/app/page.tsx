@@ -128,7 +128,7 @@ export default function Home() {
               href="mailto:contact@gianganhvu.com"
               className="hover:underline"
             >
-              Contact Me
+              
             </a>{' '}
             2025-PRESENT © Giang Anh Vu
           </span>
